@@ -1,7 +1,7 @@
 import React from "react";
-import { CounterProvider } from "../providers";
+import { CounterProvider, ThemeProvider } from "../providers";
 
-const providers = [CounterProvider];
+const providers = [CounterProvider, ThemeProvider];
 
 export const RootProvider = ({ children }) => {
   providers.forEach((Provider) => {

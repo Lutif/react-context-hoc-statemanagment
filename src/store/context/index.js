@@ -1,1 +1,2 @@
-export * from './counterContext'
+export * from "./counterContext";
+export * from "./themeContext";

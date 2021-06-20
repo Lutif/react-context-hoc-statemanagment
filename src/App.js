@@ -1,7 +1,12 @@
 import "./styles.css";
 import React from "react";
 import { RootProvider } from "./store";
-import { IncreaseButton, DecreaseButton, ShowCount } from "./components";
+import {
+  IncreaseButton,
+  DecreaseButton,
+  ShowCount,
+  ColorInput
+} from "./components";
 
 export default function App() {
   return (
@@ -10,6 +15,7 @@ export default function App() {
         <IncreaseButton />
         <DecreaseButton />
         <ShowCount />
+        <ColorInput />
       </div>
     </RootProvider>
   );

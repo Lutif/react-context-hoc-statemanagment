@@ -1,6 +1,8 @@
 import React from "react";
-import { withCounter } from "../store";
+import { withCounter, withTheme } from "../store";
 
-export const ShowCount = withCounter(({ counter }) => {
-  return <p>Current counter is {counter}</p>;
-});
+export const ShowCount = withTheme(
+  withCounter(({ counter, color }) => {
+    return <p style={{ color: color }}>Current counter is {counter}</p>;
+  })
+);

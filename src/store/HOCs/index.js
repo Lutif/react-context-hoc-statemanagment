@@ -1,1 +1,2 @@
-export * from './withCounter'
+export * from "./withCounter";
+export * from "./withTheme";
